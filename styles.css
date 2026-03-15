@@ -658,7 +658,11 @@ section { padding: 100px 0; }
   background: linear-gradient(to bottom, transparent 60%, var(--bg3));
 }
 
-.project-body       { padding: 24px; }
+.project-body {
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+}
 
 .project-tags       { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 
@@ -674,7 +678,12 @@ section { padding: 100px 0; }
 
 .project-title      { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
 .project-desc       { font-size: 0.88rem; color: #5a7390; line-height: 1.7; margin-bottom: 20px; }
-.project-links      { display: flex; gap: 16px; }
+.project-links {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
 
 .project-link {
   font-family: var(--mono);
