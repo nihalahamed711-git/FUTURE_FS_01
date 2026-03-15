@@ -656,6 +656,7 @@ section { padding: 100px 0; }
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 60%, var(--bg3));
+  pointer-events: none;
 }
 
 .project-body {
