@@ -1017,4 +1017,122 @@ footer .container {
     justify-content: center;
   }
 }
+/* ─── MOBILE RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 768px) {
 
+  /* Navigation */
+  .hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: rgba(8, 11, 15, 0.97);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    z-index: 99;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 1.1rem; }
+  .nav-cta { display: none; }
+
+  /* Hero */
+  #hero { padding: 100px 0 60px; text-align: center; }
+  h1.hero-name { font-size: clamp(2.8rem, 12vw, 4.5rem); }
+  .hero-tag { justify-content: center; }
+  .hero-tag::before { display: none; }
+  .hero-desc { font-size: 0.95rem; margin: 24px auto 0; }
+  .hero-btns { justify-content: center; }
+  .hero-stats { display: none; }
+  .hero-scroll { display: none; }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-visual {
+    max-width: 280px;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+  }
+  .about-meta { grid-template-columns: 1fr 1fr; }
+
+  /* Skills */
+  .skills-grid { gap: 8px; }
+  .skill-card { font-size: 0.75rem; padding: 8px 14px; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Resume */
+  .resume-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+  }
+  .resume-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* General spacing */
+  section { padding: 70px 0; }
+  .container { padding: 0 20px; }
+
+  /* Hero */
+  h1.hero-name { font-size: clamp(2.4rem, 11vw, 3.5rem); }
+  .hero-role .pill { font-size: 0.72rem; padding: 3px 10px; }
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+  }
+  .hero-btns { flex-direction: column; }
+
+  /* Section titles */
+  .section-title { font-size: 1.8rem; }
+
+  /* About */
+  .about-meta { grid-template-columns: 1fr; }
+  .about-visual { max-width: 240px; }
+
+  /* Skills */
+  .skill-card { font-size: 0.72rem; padding: 7px 12px; }
+
+  /* Project cards */
+  .project-img { height: 150px; }
+  .project-body { padding: 18px; }
+  .project-title { font-size: 1rem; }
+
+  /* Contact links */
+  .contact-link-item { padding: 12px 16px; }
+  .cli-val { font-size: 0.82rem; word-break: break-all; }
+
+  /* Form */
+  .form-group input,
+  .form-group textarea { font-size: 0.78rem; }
+  .form-submit { width: 100%; justify-content: center; }
+}
