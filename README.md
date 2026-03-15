@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mohamed Nihal — Personal Portfolio Website
 
 A clean, dark, and minimal portfolio website built with pure **HTML**, **CSS**, and **JavaScript** — no frameworks, no dependencies, deploys anywhere.
@@ -112,3 +113,7 @@ This project is open source and available for personal use.
 ---
 
 *Built as part of the Future Interns Full Stack Web Development Programme — 2026*
+=======
+# FUTURE_FS_01
+Personal portfolio website built as Task 1 of the Future Interns Full Stack Web Development Internship.
+>>>>>>> e066983fc6be955900431ab504e6b0080dc239c6
